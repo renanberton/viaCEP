@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './style.css';
 
 type cepType = {
-    cep?: any,
+    cep: any,
     logradouro?: string,
     bairro?: string,
     localidade?: string,
@@ -10,8 +10,7 @@ type cepType = {
     ddd?: string,
 }
 
-
-export function BuscadorCEP({ cep, logradouro, bairro, ddd, localidade, uf }: cepType) {
+export default function BuscadorCEP(cep: any) {
     const [valorCEP, setCEP] = useState<cepType>();
 
     useEffect(() => {
@@ -43,9 +42,7 @@ export function BuscadorCEP({ cep, logradouro, bairro, ddd, localidade, uf }: ce
                 <p>
                     {valorCEP?.uf}
                 </p>
-                <p>
-                    {valorCEP?.ddd}
-                </p>
+                {valorCEP?.ddd}
             </div>
         </div>
     )

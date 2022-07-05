@@ -1,11 +1,7 @@
-.boxCEP {
+div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 25px;
-}
-
-.boxCEP input {
-    text-align: center;
 }
