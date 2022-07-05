@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #3c3c3c;
+    padding: 20px;
+}
+
+.boxCEP {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.boxCEP p {
+    color: #fff;
+}

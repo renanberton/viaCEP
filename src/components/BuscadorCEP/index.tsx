@@ -10,12 +10,12 @@ type cepType = {
     ddd?: string,
 }
 
-export default function BuscadorCEP(cep: any) {
+export function BuscadorCEP(cep: any) {
     const [valorCEP, setCEP] = useState<cepType>();
 
     useEffect(() => {
         function LoadCEP() {
-            fetch('https://viacep.com.br/ws/09895770/json/')
+            fetch('https://viacep.com.br/ws/' + cep.cep + '/json/')
                 .then(response => response.json())
                 .then(data => setCEP(data))
 
@@ -25,24 +25,26 @@ export default function BuscadorCEP(cep: any) {
 
     }, [])
     return (
-        <div>
-            <div>
+        <div className='container'>
+            <div className='boxCEP'>
                 <p>
-                    {valorCEP?.logradouro}
+                    Rua: {valorCEP?.logradouro}
                 </p>
                 <p>
-                    {valorCEP?.bairro}
+                    Bairro: {valorCEP?.bairro}
                 </p>
                 <p>
-                    {valorCEP?.localidade}
+                    Cidade: {valorCEP?.localidade}
                 </p>
                 <p>
-                    {valorCEP?.cep}
+                    CEP: {valorCEP?.cep}
                 </p>
                 <p>
-                    {valorCEP?.uf}
+                    Distrito: {valorCEP?.uf}
                 </p>
-                {valorCEP?.ddd}
+                <p>
+                    DDD :{valorCEP?.ddd}
+                </p>
             </div>
         </div>
     )
