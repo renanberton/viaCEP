@@ -23,7 +23,7 @@ export function BuscadorCEP(cep: any) {
         LoadCEP()
         /* Aqui chamamos a função que faz os fetchs, etc e depois retorna o HTML abaixo \/ */
 
-    }, [])
+    }, [cep.cep])
     return (
         <div className='container'>
             <div className='boxCEP'>

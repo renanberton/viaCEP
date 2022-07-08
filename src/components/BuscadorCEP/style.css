@@ -6,6 +6,8 @@
 .container {
     background-color: #3c3c3c;
     padding: 20px;
+    border-radius: 5px;
+    transition: 1s;
 }
 
 .boxCEP {
