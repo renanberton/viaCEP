@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react';
 import './style.css';
 
 type cepType = {
-    cep: any,
-    logradouro?: string,
-    bairro?: string,
-    localidade?: string,
-    uf?: string,
-    ddd?: string,
+    cep?: any | '',
+    logradouro?: any | '',
+    bairro?: any | '',
+    localidade?: any | '',
+    uf?: any | '',
+    ddd?: any | '',
 }
 
 export function BuscadorCEP(cep: any) {
@@ -22,13 +22,13 @@ export function BuscadorCEP(cep: any) {
         }
         LoadCEP()
         /* Aqui chamamos a função que faz os fetchs, etc e depois retorna o HTML abaixo \/ */
+    }, [])
 
-    }, [cep.cep])
     return (
         <div className='container'>
             <div className='boxCEP'>
                 <p>
-                    Rua: {valorCEP?.logradouro}
+                    Logradouro: {valorCEP?.logradouro}
                 </p>
                 <p>
                     Bairro: {valorCEP?.bairro}

@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
 .container {
-    background-color: #3c3c3c;
+    background-color: #7c7c7c;
     padding: 20px;
     border-radius: 5px;
     transition: 1s;
@@ -20,4 +22,33 @@
 
 .boxCEP p {
     color: #fff;
+    font-family: 'Roboto';
+}
+
+#cepValue {
+    text-align: center;
+    height: 35px;
+    border: none;
+    width: 140px;
+    font-family: 'Roboto';
+}
+
+span {
+    font-size: 30px;
+    color: #3330E4;
+    font-weight: bold;
+    font-family: 'Francois One';
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #3330E4;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'Francois One';
 }

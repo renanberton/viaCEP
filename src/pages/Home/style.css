@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -21,27 +23,3 @@
     gap: 50px;
 }
 
-span {
-    font-size: 20px;
-    color: #3330E4;
-    font-weight: bold;
-}
-
-#cepValue {
-    text-align: center;
-    height: 20px;
-    border: none;
-    width: 140px;
-}
-
-.btn {
-    width: 150px;
-    height: auto;
-    font-size: 16px;
-    background-color: #3330E4;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 4px;
-}
