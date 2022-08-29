@@ -1,3 +1,6 @@
+# Projeto criado para consulta de CEP em todo o território brasileiro
+Para consultar seu CEP, basta acessar: https://consute-seu-cep.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
